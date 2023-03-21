@@ -36,7 +36,11 @@ export default function Dashboard() {
           </Button>
         </Box>
       </Box>
-      <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gridAutoRows="140px" gap="20px">
+      <Box display="grid"
+        gridTemplateColumns="repeat(12, 1fr)"
+        gridAutoRows="minmax(auto, 130px)"
+        gap="20px">
+
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -163,7 +167,12 @@ export default function Dashboard() {
             </Box>
           ))}
         </Box>
-        <Box gridColumn="span 4" gridRow="span 2" backgroundColor={colors.primary[400]} p="30px">
+
+        <Box gridColumn="span 4"
+          gridRow="span 2"
+          backgroundColor={colors.primary[400]}
+          p="30px"
+        >
           <Typography variant="h5" fontWeight="600">
             Campaign
           </Typography>

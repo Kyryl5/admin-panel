@@ -59,6 +59,7 @@ export default function Sidebar() {
         '& .pro-menu-item.active': {
           color: '#6870fa !important',
         },
+        height: '100%',
       }}
     >
       <ProSidebar collapsed={isCollapsed}>
@@ -90,7 +91,7 @@ export default function Sidebar() {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`/ukraine-flag.png`}
+                  src={`./ukraine-flag.png`}
                   style={{ cursor: 'pointer', borderRadius: '50%' }}
                 />
               </Box>
@@ -113,7 +114,7 @@ export default function Sidebar() {
           <Box paddingLeft={isCollapsed ? undefined : '10%'}>
             <Item
               title="Dashboard"
-              to="/admin-panel"
+              to="/"
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -124,21 +125,21 @@ export default function Sidebar() {
             </Typography>
             <Item
               title="Manage Team"
-              to="/admin-panel/team"
+              to="/team"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Contacts Information"
-              to="/admin-panel/contacts"
+              to="/contacts"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Invoices Balances"
-              to="/admin-panel/invoices"
+              to="/invoices"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -149,21 +150,21 @@ export default function Sidebar() {
             </Typography>
             <Item
               title="Profile Form"
-              to="/admin-panel/form"
+              to="/form"
               icon={<PersonOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Calendar"
-              to="/admin-panel/calendar"
+              to="/calendar"
               icon={<CalendarTodayOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="FAQ Page"
-              to="/admin-panel/faq"
+              to="/faq"
               icon={<HelpOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -174,28 +175,28 @@ export default function Sidebar() {
             </Typography>
             <Item
               title="Bar Chart"
-              to="/admin-panel/bar"
+              to="/bar"
               icon={<BarChartOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Pie Chart"
-              to="/admin-panel/pie"
+              to="/pie"
               icon={<PieChartOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Line Chart"
-              to="/admin-panel/line"
+              to="/line"
               icon={<TimelineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Geography Chart"
-              to="/admin-panel/geography"
+              to="/geography"
               icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
